@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.2//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-5.2.dtd">
+
+<hibernate-mapping>
+<class name="fhibernate.product" table="PRODUCTS">
+
+<id name="productid" column="id">
+<generator class="assigned"/>
+</id>
+
+<property name="prodname" column="pname"></property>
+<property name="price" column="price"></property>
+</class>
+</hibernate-mapping>
